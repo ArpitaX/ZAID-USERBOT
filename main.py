@@ -19,9 +19,7 @@ SUDO_USERS = SUDO_USERS
 DB_URL = DB_URL
 cleanmode = {}
 
-if not STRING_SESSION:
-    logging.error("No String Session Found! Exiting!")
-    quit(1)
+
 
 if not API_ID:
     logging.error("No Api-ID Found! Exiting!")
