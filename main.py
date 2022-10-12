@@ -19,7 +19,7 @@ SUDO_USERS = SUDO_USERS
 DB_URL = DB_URL
 cleanmode = {}
 
-if not STRING_SESSION1:
+if not STRING_SESSION:
     logging.error("No String Session Found! Exiting!")
     quit(1)
 
@@ -47,7 +47,7 @@ else:
 Owner = LOG_GROUP
 
 
-bot1 = Client(session_name= STRING_SESSION1, api_id = API_ID, api_hash = API_HASH , plugins=dict(root="handlers"))
+bot1 = Client(session_name= STRING_SESSION, api_id = API_ID, api_hash = API_HASH , plugins=dict(root="handlers"))
 
 scheduler = AsyncIOScheduler()
 CMD_HELP = {}
