@@ -117,7 +117,7 @@ async def kang_stick(app: Client, message: Message):
     pack = 1
     nm = message.from_user.username
     packname = f"@{nm} Kang Pack {pack}"
-    packshortname = f"ZAIDUB_{message.from_user.id}_{pack}"
+    packshortname = f"{message.from_user.id}_{pack}"
     emoji = "🤔"
     try:
         a_emoji = a_emoji.strip()
